@@ -1,0 +1,231 @@
+:root {
+    --myura: #880044;
+    --myuraslight: #76003b;
+    --myuraback: #a800a5;
+    --myurabackunvisit: #1f001e;
+    --myuralite: #ffbfde;
+    --myuraborder: #d45c74;
+  }
+@font-face {
+    font-family: 'NES';
+    src: url('fonts/nintendo-nes-font/nintendo-nes-font.ttf');
+}
+body 
+{
+    text-align: left;
+    margin: 5%;
+    margin-top: 10px; 
+    padding: 0.1%;
+    background-image: url(images/background.png);
+    background-size: 15%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}  
+nav 
+{ 
+    font-family: 'Reggae One', serif;
+    background-color: var(--myura);
+    display: flex;
+    justify-content: right;
+    text-anchor: initial;
+    border: var(--myuraborder);
+    border-radius: 0.5%;
+    border-style: solid;
+}
+nav a:link 
+{
+    color: var(--myuralite);
+    background-color: var(--myuraslight);
+}
+nav a:visited 
+{
+    color: var(--myuralite);
+    background-color: var(--myuraback);
+}
+nav a:hover 
+{
+    color: white;
+}
+footer 
+{ 
+    font-family: 'Reggae One', serif;
+    background-color: var(--myura);
+    display: flex;
+    justify-content: right;
+    text-anchor: initial;
+    border: var(--myuraborder);
+    border-radius: 0.5%;
+    border-style: solid;
+}
+footer a:link 
+{
+    color: var(--myuralite);
+    background-color: var(--myuraslight);
+}
+footer a:visited 
+{
+    color: var(--myuralite);
+    background-color: var(--myuraback);
+}
+footer a:hover 
+{
+    color: white;
+}
+body a
+{
+    text-decoration: none; 
+    color: gold;
+}
+body a:hover
+{
+    text-decoration: none; 
+    color: white;
+}
+hr
+{
+    border-color: wheat;
+    border-style: dashed solid;
+}
+.three-col
+{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    height: auto;
+}
+.card {
+    padding: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 90%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.504);
+    border-radius: 5px;
+    vertical-align: top;
+    align-content: center;
+  }  
+.card:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container
+{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 5px; 
+}
+.title
+{
+    font-family: 'Press Start 2P', serif;
+    font-size: large;
+    color: var(--myuralite);
+    background-color: var(--myurabackunvisit);
+    padding: 1%;
+    text-align: center;
+}
+.bio 
+{
+    font-family: 'Reggae One', serif;
+    color: wheat;
+    text-shadow: rgba(255, 204, 0, 0.707) 1px 0 10px;
+}
+.lang
+{
+    flex-grow: inherit;
+    font-size: 2.6vw;
+    padding-left: 10%;
+    list-style-type: square;
+}
+.lead
+{
+    flex-grow: inherit;
+    font-size: 1.25vw;
+    padding-left: 5%;
+    list-style-type: square;
+}
+.skills
+{
+    flex-grow: inherit;
+    font-size: 1.25vw;
+    padding-left: 5%;
+    list-style-type: square;
+}
+.myself
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: inset;
+    border-width: 6px;
+    border-color: rgba(14, 0, 102, 0.651);
+}
+.banner
+{
+    position:absolute;
+    max-width: 255px;
+    height: auto;
+    right:5%;
+    top:40px;
+    z-index:1;
+}
+.banner-left
+{
+    position:absolute;
+    max-width: 133px;
+    height: auto;
+    left:5.25%;
+    top:40px;
+    z-index:1;
+}
+.small-img
+{
+    position: relative;
+    z-index:1;
+    max-width: 20vw;
+    height: auto;
+}
+.rock-img
+{
+    max-width: 26vw;
+    height: auto;    
+}
+.locale
+{
+text-align: center;
+}
+.one-col
+{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-height: 500px;
+    width: auto;
+
+}
+.one-col .card form
+{
+    display: block;
+    text-align: center;
+}
+label
+{
+    display:inline-block;
+    font-size: 3vh;
+    margin-bottom: 10px;
+}
+input, textarea
+{
+    max-width: 25vh;
+    background-color: #1f001e;
+    font-family: 'Reggae One', serif;
+    color: wheat;
+}
+#footer 
+{
+    margin-top: 200px;
+    width: 100%;
+}
+  
